@@ -1,0 +1,29 @@
+<div>
+    <table>
+        <tr>
+            <th><p class="TableTitle">ID</p></th>
+            <th><p class="TableTitle">Title</p></th>
+            <th><p class="TableTitle">Description</p></th>
+            <th><p class="TableTitle">Price</p></th>
+            <th><p class="TableTitle">Thumbnail</p></th>
+            <th><p class="TableTitle">Stock</p></th>
+            <th><p class="TableTitle">Category</p></th>
+            <th><p class="TableTitle">Status</p></th>
+            <th><p class="TableTitle">Code</p></th>
+        </tr>
+
+        {{#each data}}
+        <tr>
+            <td><p class="TableText">{{this.id}}</p></td>
+            <td><p class="TableText">{{this.title}}</p></td>
+            <td><p class="TableText">{{this.description}}</p></td>
+            <td><p class="TableText">{{this.price}}</p></td>
+            <td><p class="TableText">{{this.thumbnail}}</p></td>
+            <td><p class="TableText">{{this.stock}}</p></td>
+            <td><p class="TableText">{{this.category}}</p></td>
+            <td><p class="TableText">{{this.status}}</p></td>
+            <td><p class="TableText">{{this.code}}</p></td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
